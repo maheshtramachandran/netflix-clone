@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import axios from "../constants/axios.config";
-import baseUrl from "../constants/images.config";
+import axios from "../../constants/axios.config";
+import baseUrl from "../../constants/images.config";
 import "./Categories.css";
 
 function Categories({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
 
-  console.log("movies", movies);
   useEffect(() => {
     async function fetchData() {
       const res = await axios.get(fetchUrl);
