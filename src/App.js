@@ -1,12 +1,14 @@
 import "./App.css";
 import Banner from "./components/Banner/Banner";
 import Categories from "./components/Categories/Categories";
+import Nav from "./components/Nav/Nav";
 import requests from "./constants/requests";
 
 function App() {
   return (
     <div className="app">
       {/* Nav */}
+      <Nav />
 
       {/* banner */}
       <Banner />
